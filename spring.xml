@@ -1,0 +1,17 @@
+<?xml version=1.0 encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation=" 
+http://www.springframework.org/schema/beans http://www.springframework/schema/beans/spring-beans.xsd"> 
+
+<bean id="publisher" class="university.EduMinistry" scope="prototype";
+<constructor-arg value="VSL"></constructor-arg> 
+<property name="id" value="10"></property> 
+<property name="beststudent" ref="bs"></property> 
+</bean> 
+<bean id="bs" class="university.Student"› 
+<constructor-arg value="Ivan Ivanov"></constructor-arg> 
+<constructor-arg value="It"></constructor-arg> 
+</bean> 
+</beans> 
+
